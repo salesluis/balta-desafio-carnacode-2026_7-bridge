@@ -5,7 +5,7 @@
 
 using System;
 
-namespace DesignPatternChallenge
+namespace DesignPatternChallenge.Challenge
 {
     // Contexto: Sistema que renderiza notificações em múltiplas plataformas
     // Cada combinação de tipo + plataforma requer código específico
@@ -63,8 +63,8 @@ namespace DesignPatternChallenge
         {
             Console.WriteLine($"[Desktop - Toast] Windows Notification:");
             Console.WriteLine($"╔══════════════════════════╗");
-            Console.WriteLine($"║ {title.PadRight(24)} ║");
-            Console.WriteLine($"║ {content.PadRight(24)} ║");
+            Console.WriteLine($"║ {title.PadRight(24)}     ║");
+            Console.WriteLine($"║ {content.PadRight(24)}   ║");
             Console.WriteLine($"╚══════════════════════════╝");
         }
     }
@@ -127,7 +127,7 @@ namespace DesignPatternChallenge
             Console.WriteLine($"╔══════════════════════════╗");
             Console.WriteLine($"║ [IMG: {imageUrl.Substring(0, Math.Min(15, imageUrl.Length))}...]  ║");
             Console.WriteLine($"║ {title.PadRight(24)} ║");
-            Console.WriteLine($"║ {content.PadRight(24)} ║");
+            Console.WriteLine($"║ {content.PadRight(24)}║");
             Console.WriteLine($"╚══════════════════════════╝");
         }
     }
